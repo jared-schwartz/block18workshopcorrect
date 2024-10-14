@@ -1,7 +1,28 @@
-Problem 1
+### 1. 'Multiplication' Function Unit Tests
 
-problem 2
+Expect multiply(3, 4) to be 12
+Expect multiply(-2, 5) to be -10
+Expect multiply(0, 100) to be 0
 
-problem 3
+### 2. 'concatOdds' Function Unit Tests
 
-problem 4
+Expect concatOdds([3, 2, 1], [9, 1, 4, 15, -1]) to be [-1, 1, 3, 9, 15]
+Expect concatOdds([], [2, 4, 6]) to be []
+Expect concatOdds(['a', 3], [9, 'b']) to raise TypeError
+
+
+### Functional Tests
+
+### 3. Functional Tests for Shopping Cart Checkout:
+
+// Test Case 1:
+Given a cart with items, a user should be able to checkout as a guest or logged-in user.
+Example: A logged-in user should proceed with checkout seamlessly.
+
+// Test Case 2:
+When the cart is empty, the checkout button should be disabled.
+Example: If the cart contains no items, users should not proceed to checkout.
+
+// Test Case 3:
+If a guest checks out, they should be asked to create an account.
+Example: Upon guest checkout, a prompt to create an account appears before payment.
